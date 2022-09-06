@@ -26,14 +26,14 @@ module.exports = {
             loader: 'babel-loader',
             exclude: '/node_modules/',
             query: {
-                presets: ['es20150', 'react'],
+                presets: ['es2015', 'react'],
                 plugins: ['transform-object-rest-spread']
             }
         },{
             test: /\.css$/,
             loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
         }, {
-           test: /\.woff|woff2|.ttf|.eat|.svg*.*$/,
+           test: /\.woff|woff2|.ttf|.eot|.svg*.*$/,
            loader: 'file' 
         }]
     }
